@@ -11,7 +11,7 @@ int numberB = ReadInt("Введите число B: ");
 ToDegree(numberA, numberB);
 
 
-// Функция возведения в степень:
+Функция возведения в степень:
 void ToDegree(int a, int b)
 {
     int result = 1;
@@ -96,3 +96,4 @@ int ReadInt(string message)
     Console.Write(message);
     return Convert.ToInt32(Console.ReadLine());
 }
+
