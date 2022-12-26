@@ -6,28 +6,28 @@
 
 // 2, 4 -> 16
 
-int numberA = ReadInt("Введите число A: ");
-int numberB = ReadInt("Введите число B: ");
-ToDegree(numberA, numberB);
+// int numberA = ReadInt("Введите число A: ");
+// int numberB = ReadInt("Введите число B: ");
+// ToDegree(numberA, numberB);
 
 
-Функция возведения в степень:
-void ToDegree(int a, int b)
-{
-    int result = 1;
-    for (int i = 1; i <= b; i++)
-    {
-        result = result * a;
-    }
-    Console.WriteLine(result);
-}
+// Функция возведения в степень:
+// void ToDegree(int a, int b)
+// {
+//     int result = 1;
+//     for (int i = 1; i <= b; i++)
+//     {
+//         result = result * a;
+//     }
+//     Console.WriteLine(result);
+// }
 
 // Функция ввода:
-int ReadInt(string message)
-{
-    Console.WriteLine(message);
-    return Convert.ToInt32(Console.ReadLine());
-}
+// int ReadInt(string message)
+// {
+//     Console.WriteLine(message);
+//     return Convert.ToInt32(Console.ReadLine());
+// }
 
 
 // Задача 27: Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
@@ -38,62 +38,63 @@ int ReadInt(string message)
 
 // 9012 -> 12
 
-int number = ReadInt("Введите число: ");
-int len = NumberLen(number);
-SumNumbers(number, len);
+// int number = ReadInt("Введите число: ");
+// int len = NumberLen(number);
+// SumNumbers(number, len);
 
 
-// Функция ввода:
-int ReadInt(string message)
-{
-    Console.Write(message);
-    return Convert.ToInt32(Console.ReadLine());
-}
+// // Функция ввода:
+// int ReadInt(string message)
+// {
+//     Console.Write(message);
+//     return Convert.ToInt32(Console.ReadLine());
+// }
 
-// Функция подсчета цифр в числе:
-int NumberLen(int a)
-{
-    int index = 0;
-    while (a > 0)
-    {
-        a /= 10;
-        index++;
-    }
-    return index;
-}
+// // Функция подсчета цифр в числе:
+// int NumberLen(int a)
+// {
+//     int index = 0;
+//     while (a > 0)
+//     {
+//         a /= 10;
+//         index++;
+//     }
+//     return index;
+// }
 
-// Функция вывода суммы цифр в числе:
-void SumNumbers(int n, int len)
-{
-    int sum = 0;
-    for (int i = 1; i <= len; i++)
-    {
-        sum += n % 10;
-        n /= 10;
-    }
-    Console.WriteLine(sum);
-}
+// // Функция вывода суммы цифр в числе:
+// void SumNumbers(int n, int len)
+// {
+//     int sum = 0;
+//     for (int i = 1; i <= len; i++)
+//     {
+//         sum += n % 10;
+//         n /= 10;
+//     }
+//     Console.WriteLine(sum);
+// }
 
-// Задача 29: Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
+// // Задача 29: Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
 
-// 1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
+// // 1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
 
-// 6, 1, 33 -> [6, 1, 33]                           
+// // 6, 1, 33 -> [6, 1, 33]                           
 
-int lenArray = ReadInt("Введите длинну массива: ");
+// int lenArray = ReadInt("Введите длинну массива: ");
 
-int[] randomArray = new int[lenArray];
-for (int i = 0; i < randomArray.Length; i++)
-{
-    randomArray[i] = new Random().Next(1,9);
-    Console.Write(randomArray[i] + " ");
-}
+// int[] randomArray = new int[lenArray];
+// for (int i = 0; i < randomArray.Length; i++)
+// {
+//     randomArray[i] = new Random().Next(1,9);
+//     Console.Write(randomArray[i] + " ");
+// }
 
 
-// Функция ввода:
-int ReadInt(string message)
-{
-    Console.Write(message);
-    return Convert.ToInt32(Console.ReadLine());
-}
+// // Функция ввода:
+// int ReadInt(string message)
+// {
+//     Console.Write(message);
+//     return Convert.ToInt32(Console.ReadLine());
+// }
+
 
